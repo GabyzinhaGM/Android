@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:hint="Digite a sua idade"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/etNome" />
 
     <Button
         android:id="@+id/btValida"
@@ -28,14 +28,14 @@
         android:layout_height="wrap_content"
         android:text="Validar"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/etNome" />
+        app:layout_constraintTop_toBottomOf="@id/etIdade" />
 
     <TextView
         android:id="@+id/tvMensagem"
         android:layout_width="match_parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btValida"/>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btValida" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
