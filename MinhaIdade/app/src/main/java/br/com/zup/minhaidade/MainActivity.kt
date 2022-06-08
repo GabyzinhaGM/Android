@@ -13,5 +13,24 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
+        binding.btValida.setOnClickListener {
+            recuperarDadosUsuario()
+        }
+
     }
+
+    private fun recuperarDadosUsuario() {
+        var nome = binding.etNome.text.toString()
+        var idade = binding.etIdade.text.toString().toInt()
+
+        if (idade >= 18) {
+            binding.tvMensagem.text = "${nome} é maior de idade, tem ${idade} anos"
+        } else {
+            binding.tvMensagem.text = "${nome} é menor de idade, tem ${idade} anos"
+        }
+
+    }
+
+
 }
+
