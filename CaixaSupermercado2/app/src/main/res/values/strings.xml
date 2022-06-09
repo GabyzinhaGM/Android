@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CaixaSupermercado</string>
+    <string name="caixa_supermercado">Caixa supermercado</string>
+    <string name="titulo_app">Caixa de supermercado</string>
+    <string name="nome_produto">Nome do produto:</string>
+    <string name="valor_produto">Valor do produto:</string>
+    <string name="quantidade_produto">Quantidade do produto:</string>
+    <string name="calcular_valor">Calcular valor</string>
+</resources>
