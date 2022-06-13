@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvCadastro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Esse é o nosso aplicativo de cadastro de livros, aqui vamos cadastrar as informações dos livros do acervo da biblioteca. "
+        android:textSize="@dimen/tamanho_fonte_12sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvCadastroDeLivro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16dp"
+        android:text="@string/cadastro_de_livro"
+        android:textColor="@color/cor_Texto_vinho"
+        android:textSize="@dimen/tamanho_fonte_14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvCadastro" />
+
+    <EditText
+        android:id="@+id/etTituloDoLivro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:hint="Digite o nome do livro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCadastroDeLivro" />
+
+    <EditText
+        android:id="@+id/etNomeDoAutor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:hint="Digite o nome do autor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTituloDoLivro" />
+
+    <EditText
+        android:id="@+id/etNumeroDePaginas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="16dp"
+        android:hint="Digite o número de paginas"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeDoAutor" />
+
+    <Button
+        android:id="@+id/btDisponivel"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="@dimen/margin_16dp"
+        android:layout_marginTop="32dp"
+        android:text="Disponivel"
+        android:textColor="#4DD0E1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNumeroDePaginas" />
+
+    <Button
+        android:id="@+id/btRetirado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:text="Retirado"
+        android:textColor="#4DD0E1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.896"
+        app:layout_constraintStart_toEndOf="@+id/btDisponivel"
+        app:layout_constraintTop_toBottomOf="@+id/etNumeroDePaginas" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

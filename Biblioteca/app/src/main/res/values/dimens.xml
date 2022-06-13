@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="tamanho_fonte_14sp">14sp</dimen>
+    <dimen name="margin_16dp">16dp</dimen>
+    <dimen name="tamanho_fonte_12sp">12sp</dimen>
+</resources>
