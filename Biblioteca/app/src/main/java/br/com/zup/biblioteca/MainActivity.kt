@@ -22,9 +22,9 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun pegarDados(statusCadastro: String) {
-        val nomeAutor = binding.etNomeDoAutor.text.toString()
-        val titulo = binding.etTituloDoLivro.text.toString()
-        val numeroDePaginas = binding.etNumeroDePaginas.text.toString()
+        var nomeAutor = binding.etNomeDoAutor.text.toString()
+        var titulo = binding.etTituloDoLivro.text.toString()
+        var numeroDePaginas = binding.etNumeroDePaginas.text.toString()
         enviarDados(nomeAutor, titulo, numeroDePaginas, statusCadastro)
     }
 
