@@ -23,11 +23,10 @@ class CadastroActivity : AppCompatActivity() {
     }
 
     private fun exibirDados(autor: String, titulo: String, paginas: Int, statusCadastro: String) {
-        val mensagem = "Autor: ${autor}, titulo: ${titulo}, paginas: ${paginas}"
-        binding.tvCadastro.text = statusCadastro
+        val mensagem = getString(R.string.cadastro_mensagem, autor, titulo, paginas)
+        binding.tvCadastro.text = getString(R.string.Livro_status_cadastro, livro, statusCadastro)
         binding.tvDados.text = mensagem
     }
-
 
 }
 

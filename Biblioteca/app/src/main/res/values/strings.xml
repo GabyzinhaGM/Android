@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">Biblioteca</string>
     <string name="cadastro_de_livro">Cadastro de livros</string>
+    <string name="cadastro_mensagem">Autor: %s, Título: %s, Número de páginas: %d</string>
+    <string name="Livro_status_cadastro">livro %s, status %s</string>
 </resources>
